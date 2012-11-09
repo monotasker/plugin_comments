@@ -20,9 +20,11 @@ Note that this snippet passes the arguments and variables from the parent view o
 - place plugin_comments folder in this new plugins folder
 - create symlinks from plugin files to application directories:
 
-    `cd [web2py_folder]/applications/myapp  
+    ```bash
+    cd [web2py_folder]/applications/myapp  
     ln -s ../plugins/plugin_comments/controllers/plugin_comments.py controllers/plugin_comments.py  
     ln -s ../plugins/plugin_comments/models/plugin_comments.py models/plugin_comments.py  
-    ln -s ../plugins/plugin_comments/views/plugin_comments views/plugin_comments`  
+    ln -s ../plugins/plugin_comments/views/plugin_comments views/plugin_comments
+    ```  
 
-** note that the relative addresses allow the symbolic links to work even across systems where the web2py directory is in different locations.
+*note that the relative addresses allow the symbolic links to work even across systems where the web2py directory is in different locations.*
