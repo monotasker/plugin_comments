@@ -10,7 +10,7 @@ A simplet plugin for the web2py framework, providing an ajax comment widget with
 
 Where you want the widget to appear, simply add the following to your web2py template:
 
-{{=LOAD('plugin_comments', 'widget.load', args=request.args, vars=request.vars, ajax=False, ajax_trap=True)}} 
+    {{=LOAD('plugin_comments', 'widget.load', args=request.args, vars=request.vars, ajax=False, ajax_trap=True)}} 
 
 Note that this snippet passes the arguments and variables from the parent view on to the plugin_comments controller. If you do not want this, simply replace request.args with a list of arguments and replace request.vars with a dictionary of variables.
 
