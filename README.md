@@ -21,9 +21,8 @@ Note that this snippet passes the arguments and variables from the parent view o
 - create symlinks from plugin files to application directories:
 
     cd [web2py_folder]/applications/myapp
-    ln -s ../plugins/plugin_listandedit/views/plugin_listandedit views/plugin_listandedit
-    ln -s ../plugins/plugin_listandedit/models/plugin_listandedit.py models/plugin_listandedit.py
-    ln -s ../plugins/plugin_listandedit/static/plugin_listandedit static/plugin_framework
-    ln -s ../plugins/plugin_listandedit/controllers/plugin_listandedit.py controllers/plugin_listandedit.py
+    ln -s ../plugins/plugin_comments/controllers/plugin_comments.py controllers/plugin_comments.py
+    ln -s ../plugins/plugin_comments/models/plugin_comments.py models/plugin_comments.py
+    ln -s ../plugins/plugin_comments/views/plugin_comments views/plugin_comments
 
 ** note that the relative addresses allow the symbolic links to work even across systems where the web2py directory is in different locations.
